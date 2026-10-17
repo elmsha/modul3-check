@@ -83,7 +83,9 @@ AUSGABE = Path("ergebnis")
 # =============================================================================
 
 API = "https://api.energy-charts.info/price"
-CACHE = Path("cache")
+HIER = Path(__file__).resolve().parent
+# Daten liegen in ./cache – oder, falls der Ordner fehlt (z. B. nach Web-Upload auf GitHub), direkt neben dem Skript
+CACHE = HIER / "cache" if (HIER / "cache").is_dir() or not list(HIER.glob("preise_*.json")) else HIER
 
 
 def hole_json(url: str, params: dict, versuche: int = 6) -> dict:
