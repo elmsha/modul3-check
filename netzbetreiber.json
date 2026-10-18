@@ -1,0 +1,119 @@
+{
+  "stand": "2026-10-18",
+  "jahr": 2026,
+  "hinweis": "Modul 3 nach §14a EnWG, Niederspannung ohne Leistungsmessung. Preise netto in ct/kWh, Modul 1 netto in €/Jahr. Fenster als Uhrzeit [von, bis) in lokaler Zeit, täglich. 'quartale' = Quartale, in denen HT/NT gelten; sonst gilt ganztägig ST. Werte aus Sekundärquellen in brutto wurden durch 1,19 geteilt.",
+  "netzbetreiber": [
+    {
+      "name": "EWE NETZ", "region": "Niedersachsen (Nordwest)",
+      "st": 3.20, "ht": 5.62, "nt": 0.32, "modul1": -91.23,
+      "ht_fenster": [["16:30", "20:30"]], "nt_fenster": [["23:00", "24:00"], ["00:00", "05:00"]],
+      "quartale": [1, 2, 3, 4],
+      "quelle": "https://www.ewe-netz.de/-/media/ewe-netz/downloads/2026_02_24_ewe_netz_nne_strom_2026.pdf",
+      "pruefung": "Original-Preisblatt",
+      "anmerkung": "Preisblatt enthält zusätzlich eine Modul-3-Zeile mit 1,35 ct/kWh, Bedeutung offen."
+    },
+    {
+      "name": "Avacon Netz", "region": "Niedersachsen, Sachsen-Anhalt",
+      "st": 6.04, "ht": 8.41, "nt": 0.60, "modul1": -112.53,
+      "ht_fenster": [["16:30", "21:00"]], "nt_fenster": [["23:00", "24:00"], ["00:00", "05:00"]],
+      "quartale": [1, 4],
+      "quelle": "https://www.avacon-netz.de/content/dam/revu-global/avacon-netz/documents/netzentgelte-strom/2026/Preisbl%C3%A4tter_AVANG_Strom_01.01.2026.pdf",
+      "pruefung": "Original-Preisblatt (vorläufige Fassung)",
+      "anmerkung": "Zuordnung der Fenster aus dem Tabellenlayout abgeleitet."
+    },
+    {
+      "name": "Westnetz", "region": "Nordrhein-Westfalen, Rheinland-Pfalz, Niedersachsen",
+      "st": 9.53, "ht": 15.65, "nt": 0.95, "modul1": -138.70,
+      "ht_fenster": [["15:00", "20:00"]], "nt_fenster": [["00:00", "07:00"]],
+      "quartale": [1, 2, 3, 4],
+      "quelle": "https://energiemarie.de/netzverzeichnis/1028/54298",
+      "pruefung": "Sekundärquelle (energiemarie.de)",
+      "anmerkung": ""
+    },
+    {
+      "name": "Bayernwerk Netz", "region": "Bayern",
+      "st": 4.72, "ht": 9.03, "nt": 0.47, "modul1": -102.63,
+      "ht_fenster": [["17:00", "22:00"]], "nt_fenster": [["10:00", "15:00"]],
+      "quartale": [2, 3],
+      "quelle": "https://www.bayernwerk-netz.de/content/dam/revu-global/bayernwerk-netz/files/netz/netzzugang/netzentgeltestrom/bayernwerk-preisblatt-netzentgelte-2026.pdf",
+      "pruefung": "Original-Preisblatt",
+      "anmerkung": "Saisonal: HT/NT nur April bis September."
+    },
+    {
+      "name": "E.DIS Netz", "region": "Brandenburg, Mecklenburg-Vorpommern",
+      "st": 5.47, "ht": 8.80, "nt": 0.55, "modul1": -108.25,
+      "ht_fenster": [["10:15", "12:00"], ["16:45", "20:15"]], "nt_fenster": [["23:30", "24:00"], ["00:00", "05:00"]],
+      "quartale": [1, 4],
+      "quelle": "https://www.e-dis-netz.de/content/dam/revu-global/e-dis-netz/dokumente/Preisblaetter_Netzentgelte_Strom_20260101.pdf",
+      "pruefung": "Original-Preisblatt + Sekundärquelle",
+      "anmerkung": "Saisonal: HT/NT nur Oktober bis März."
+    },
+    {
+      "name": "Schleswig-Holstein Netz", "region": "Schleswig-Holstein",
+      "st": 6.40, "ht": 8.32, "nt": 0.64, "modul1": -115.23,
+      "ht_fenster": [["09:00", "14:00"], ["17:00", "21:00"]], "nt_fenster": [["22:00", "24:00"], ["00:00", "05:00"]],
+      "quartale": [1, 4],
+      "quelle": "https://www.sh-netz.com/content/dam/revu-global/sh-netz/Documents/Schleswig-Holstein-Netz/Netzentgelte/Strom/Allgemeine-Netzentgelte/2026_netzentgelte/finale_netzentgelte_strom_ab_20260101.pdf",
+      "pruefung": "Preise Original-Preisblatt, Fenster/Quartale Sekundärquellen (14a-atlas.de, energiemarie.de)",
+      "anmerkung": "Saisonal: HT/NT nur Oktober bis März."
+    },
+    {
+      "name": "Stromnetz Berlin", "region": "Berlin",
+      "st": 7.46, "ht": 13.94, "nt": 2.61, "modul1": -123.18,
+      "ht_fenster": [["17:15", "20:15"]], "nt_fenster": [["22:15", "24:00"], ["00:00", "06:30"]],
+      "quartale": [1, 2, 3, 4],
+      "quelle": "https://energiemarie.de/netzverzeichnis/911/10115",
+      "pruefung": "Sekundärquelle (energiemarie.de), brutto umgerechnet",
+      "anmerkung": ""
+    },
+    {
+      "name": "wesernetz Bremen", "region": "Bremen (Nordwest)",
+      "st": 5.46, "ht": 7.65, "nt": 2.18, "modul1": -108.18,
+      "ht_fenster": [["17:00", "19:30"]], "nt_fenster": [["01:00", "05:00"]],
+      "quartale": [1, 2, 3, 4],
+      "quelle": "https://energiemarie.de/netzverzeichnis/1016/28195",
+      "pruefung": "Sekundärquelle (energiemarie.de), brutto umgerechnet",
+      "anmerkung": ""
+    },
+    {
+      "name": "N-ERGIE Netz", "region": "Mittelfranken",
+      "st": 5.96, "ht": 11.77, "nt": 2.38, "modul1": -111.93,
+      "ht_fenster": [["18:00", "21:00"]], "nt_fenster": [["23:00", "24:00"], ["00:00", "06:00"], ["12:00", "14:15"]],
+      "quartale": [1, 2, 3, 4],
+      "quelle": "https://energiemarie.de/netzverzeichnis/362/91183",
+      "pruefung": "Sekundärquelle (energiemarie.de), brutto umgerechnet",
+      "anmerkung": "Niedertarif nachts und zusätzlich mittags."
+    },
+    {
+      "name": "SWM Infrastruktur", "region": "München",
+      "st": 6.47, "ht": 7.14, "nt": 2.59, "modul1": -115.75,
+      "ht_fenster": [["08:30", "20:45"]], "nt_fenster": [["00:45", "06:45"]],
+      "quartale": [1, 2, 3, 4],
+      "quelle": "https://energiemarie.de/netzverzeichnis/948/85609",
+      "pruefung": "Sekundärquelle (energiemarie.de), brutto umgerechnet",
+      "anmerkung": "Sehr langes Hochtarif-Fenster mit geringem Aufschlag."
+    },
+    {
+      "name": "LEW Verteilnetz", "region": "Bayerisch-Schwaben",
+      "st": 4.09, "ht": 8.09, "nt": 0.41, "modul1": -97.90,
+      "ht_fenster": [["17:00", "21:00"]], "nt_fenster": [["10:00", "15:00"]],
+      "quartale": [1, 2, 3, 4],
+      "quelle": "https://energiemarie.de/netzverzeichnis/330/87770",
+      "pruefung": "Sekundärquelle (energiemarie.de), brutto umgerechnet",
+      "anmerkung": "Niedertarif ausschließlich mittags."
+    },
+    {
+      "name": "Netze BW", "region": "Baden-Württemberg",
+      "st": 7.57, "ht": 11.06, "nt": 3.03, "modul1": -124.00,
+      "ht_fenster": [["17:00", "22:00"]], "nt_fenster": [["10:00", "14:00"]],
+      "quartale": [1, 2, 3, 4],
+      "quelle": "https://energiemarie.de/netzverzeichnis/377/73099",
+      "pruefung": "Sekundärquelle (energiemarie.de), brutto umgerechnet",
+      "anmerkung": "Niedertarif ausschließlich mittags."
+    }
+  ],
+  "nicht_aufgenommen": [
+    {"name": "Hamburger Energienetze", "grund": "Laut Sekundärquelle Modul 3 noch nicht angeboten – nicht verifiziert."},
+    {"name": "Mitteldeutsche Netzgesellschaft Strom (MITNETZ)", "grund": "Laut Sekundärquelle Modul 3 noch nicht angeboten – nicht verifiziert."}
+  ]
+}
